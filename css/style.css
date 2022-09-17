@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+    background: url(../images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 5rem;
+    gap: 3rem;
+}
+
+section{
+    color: white;
+}
+
+section h1{
+    font-size: 3.8em;
+}
+
+section p{
+    opacity: 0.9;
+}
+
+.sign-up{
+    width: 100%;
+}
+
+#free-trial{
+    width: 100%;
+    padding: 0.8rem 2rem;
+    margin-bottom: 1rem;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    background: hsl(248, 32%, 49%);
+    box-shadow: 0px 2px 1px rgba(138, 94, 94, 0.548);
+}
+
+span{
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+
+.form{
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px rgba(138, 94, 94, 0.548);
+}
+
+input{
+    display:block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.parent{
+    position: relative;
+}
+
+.error{
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+.email-p{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    color: hsl(0, 100%, 74%) ;
+    font-size: 13px;
+    opacity: 0;
+}
+
+.input-para{
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    font-size: 13px;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+}
+
+.show{
+    visibility: hidden;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(138, 94, 94, 0.548);
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: large;
+}
+
+.claim{
+    width: 100%;
+    padding: 0.8rem 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    background: hsl(154, 59%, 51%);
+    box-shadow: 0px 2px 1px rgba(138, 94, 94, 0.548);
+    cursor: pointer;
+}
+
+.terms{
+    font-size: smaller;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.terms span{
+    color: red;
+}
+
+@media(max-width:900px){
+    main{
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 1rem 2rem;
+        gap: 3rem;
+    }
+
+    section{
+        text-align: center;
+        font-size: 13px;
+    }
+}
